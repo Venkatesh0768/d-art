@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: var(--font-outfit), sans-serif;
+  --color-primary: #FF5E00;
+  --color-dark: #0A0A0A;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  font-family: var(--font-outfit);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.bg-pattern {
+  background-image: radial-gradient(circle at 50% 50%, #2f1d11 0%, #0a0a0a 70%);
+}
+
+/* ===== Scroll Reveal Animations ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  will-change: transform, opacity;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-card {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  will-change: transform, opacity;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Stagger delays */
+.delay-1 {
+  transition-delay: 0ms;
+}
+
+.delay-2 {
+  transition-delay: 150ms;
+}
+
+.delay-3 {
+  transition-delay: 300ms;
+}
+
+.delay-4 {
+  transition-delay: 450ms;
+}
+
+.delay-5 {
+  transition-delay: 600ms;
+}
+
+.delay-6 {
+  transition-delay: 750ms;
+}
+
+.delay-7 {
+  transition-delay: 900ms;
+}
+
+.delay-8 {
+  transition-delay: 1050ms;
+}
+
+/* Parallax helper */
+.parallax-bg {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* Hide scrollbar detail marker consistently */
+details>summary {
+  list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ===== Testimonial Marquee ===== */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* .marquee-track {
+  display: flex;
+  animation: marquee-scroll 10s linear infinite;
+  will-change: transform;
+} */
+/* .marquee-track {
+  display: flex;
+  gap: 24px; 
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+} */
+
+
+/* .marquee-track>* {
+  margin-right: 1.5rem;
+} */
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
+.marquee-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
