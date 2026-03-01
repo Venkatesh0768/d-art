@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BrandSection from "@/components/BrandSection";
+import StatsBanner from "@/components/common/StatsBanner";
 
 // SVG Icons
 const SearchIcon = () => (
@@ -600,56 +601,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Huge Footer CTA */}
-      <section className="relative w-full overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 w-full h-full z-0">
-          <img src="/assets/footer_bg.png" alt="" className="w-full h-full object-cover" />
-        </div>
-
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-8 lg:px-24 pt-28 pb-24">
-          {/* Orange dot */}
-          <div className="reveal delay-1 mb-6">
-            <span className="w-2 h-2 rounded-full border-[1.5px] border-[#FF5E00] block mx-auto shadow-[0_0_10px_rgba(255,100,0,0.5)]"></span>
-          </div>
-
-          {/* Main headline */}
-          <h1 className="reveal delay-2 text-5xl md:text-[5.5rem] font-bold text-white leading-[1.05] tracking-tight mb-8">
-            We transform brands.<br />
-            <span className="text-[#FF5E00] italic">Your success is next.</span>
-          </h1>
-
-          {/* Subtitle */}
-          <p className="reveal delay-3 text-white/80 text-lg md:text-xl max-w-md leading-relaxed mb-10 font-normal tracking-wide">
-            Start your project now by booking a one-on-<br className="hidden md:block" />one consultation with our expert.
-          </p>
-
-          {/* CTA Links */}
-          <div className="reveal delay-4 flex gap-6 sm:gap-8 mb-16 text-lg font-medium">
-            <a href="#" className="text-white underline underline-offset-[6px] decoration-white decoration-[1.5px] hover:text-[#FF5E00] hover:decoration-[#FF5E00] transition-colors tracking-wide">
-              book a call
-            </a>
-            <a href="#" className="text-white underline underline-offset-[6px] decoration-white decoration-[1.5px] hover:text-[#FF5E00] hover:decoration-[#FF5E00] transition-colors tracking-wide">
-              Connect on LinkedIn
-            </a>
-          </div>
-
-          {/* Partners tagline */}
-          <p className="reveal delay-5 text-white/60 text-sm md:text-base mb-10 font-normal tracking-wide">
-            Meet the partners who are part of<br />our success story.
-          </p>
-
-          {/* Partner logos — user will add image manually */}
-          <div className="reveal delay-6 w-full max-w-3xl">
-            <img src="/assets/brands_logo.png" alt="Partner Logos" className="w-full h-auto object-contain opacity-80" />
-          </div>
-        </div>
-
-        {/* Diagonal bottom stripe */}
-        <div className="absolute bottom-0 left-0 right-0 h-16 z-20 overflow-hidden">
-          <div className="absolute bottom-0 left-0 right-0 w-[120%] h-24 bg-white -ml-[10%] origin-bottom-left -skew-y-1"></div>
-        </div>
-      </section>
+     
+      <StatsBanner/>
 
       {/* Footer */}
       <Footer />
