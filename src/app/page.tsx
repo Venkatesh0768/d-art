@@ -93,24 +93,24 @@ export default function Home() {
         <Header />
 
         {/* Hero Content Main Titles */}
-        <div className="absolute top-[35%] left-8 lg:left-16 z-10 w-full max-w-4xl">
-          <h1 className="text-5xl lg:text-[5.5rem] font-bold text-white leading-[1.1] tracking-tight drop-shadow-xl">
+        <div className="absolute top-[30%] md:top-[35%] left-6 md:left-8 lg:left-16 z-10 w-full max-w-[90%] md:max-w-4xl">
+          <h1 className="text-4xl md:text-5xl lg:text-[5.5rem] font-bold text-white leading-[1.1] tracking-tight drop-shadow-xl">
             Shaping Brands with <br />
             Creations that Inspire<br />
-            <span className="block mt-6 text-3xl lg:text-4xl">Since 2005</span>
+            <span className="block mt-4 md:mt-6 text-2xl md:text-3xl lg:text-4xl">Since 2005</span>
           </h1>
         </div>
 
         {/* Hero Content Right Text */}
-        <div className="absolute top-[65%] lg:top-[55%] right-8 lg:right-16 z-10 w-full max-w-3xl text-right">
-          <h2 className="text-xl lg:text-[1.8rem] text-gray-200 font-medium leading-[1.4] drop-shadow-xl">
+        <div className="absolute top-[65%] lg:top-[55%] right-6 md:right-8 lg:right-16 z-10 w-full max-w-[90%] md:max-w-3xl text-right">
+          <h2 className="text-lg md:text-xl lg:text-[1.8rem] text-gray-200 font-medium leading-[1.4] drop-shadow-xl">
             Over 20 Years of Igniting Business Growth <br className="hidden lg:block" />
             Through Creativity, Strategy & Innovation
           </h2>
         </div>
 
         {/* Hero Bottom Navigation Tags */}
-        <div className="absolute bottom-8 lg:bottom-12 left-8 right-8 lg:left-16 lg:right-16 z-10 flex flex-wrap justify-center lg:justify-between items-center text-white font-semibold gap-6 text-sm lg:text-lg">
+        <div className="absolute bottom-6 md:bottom-8 lg:bottom-12 left-6 right-6 md:left-8 md:right-8 lg:left-16 lg:right-16 z-10 flex flex-wrap justify-center lg:justify-between items-center text-white font-semibold gap-3 md:gap-4 lg:gap-6 text-[10px] sm:text-xs md:text-sm lg:text-lg">
           <span className="cursor-pointer hover:text-orange-500 transition-colors">Website</span>
           <span className="cursor-pointer hover:text-orange-500 transition-colors">Stationery</span>
           <span className="cursor-pointer hover:text-orange-500 transition-colors">Graphic Designing</span>
@@ -123,58 +123,58 @@ export default function Home() {
       </section>
 
       {/* Achievements Section */}
-      <section className="bg-black text-white px-8 lg:px-16 pt-8 pb-8 w-full relative z-20">
+      <section className="bg-black text-white px-6 md:px-8 lg:px-16 pt-8 pb-8 w-full relative z-20">
         {/* Top small header */}
-        <div className="reveal delay-1 flex items-center gap-3 pt-2 mb-12 w-full">
-          <div className="flex items-center gap-3 shrink-0">
+        <div className="reveal delay-1 flex items-center gap-3 pt-2 mb-8 md:mb-12 w-full">
+          <div className="flex items-center gap-2 md:gap-3 shrink-0">
             <span className="w-2 h-2 rounded-full border-[1.5px] border-orange-600 block shadow-[0_0_10px_rgba(255,100,0,0.5)]"></span>
-            <span className="text-gray-300 text-lg tracking-wide bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent">Our Achievements</span>
-            <span className="text-[#555] text-[10px] font-medium tracking-[0.05em] ml-2 pl-4 border-l border-[#333]">milestones</span>
+            <span className="text-gray-300 text-base md:text-lg tracking-wide bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent">Our Achievements</span>
+            <span className="text-[#555] text-[10px] font-medium tracking-[0.05em] ml-2 pl-3 md:pl-4 border-l border-[#333]">milestones</span>
           </div>
           <div className="flex-1 h-[1px] bg-[#222]"></div>
         </div>
 
         {/* Certificate Row */}
-        <div className="reveal delay-2 flex flex-col lg:flex-row justify-between items-start gap-10 mb-16 w-full">
-          <div className="max-w-xl shrink-0">
-            <h2 className="text-[2.5rem] lg:text-[2.8rem] font-bold mb-6 leading-[1.1] tracking-tight text-white drop-shadow-lg">
+        <div className="reveal delay-2 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-10 mb-12 lg:mb-16 w-full">
+          <div className="w-full lg:max-w-xl shrink-0 text-left">
+            <h2 className="text-[2rem] md:text-[2.5rem] lg:text-[2.8rem] font-bold mb-4 md:mb-6 leading-[1.1] tracking-tight text-white drop-shadow-lg">
               India's Best Packaging<br />
               Award 2020 questions
             </h2>
-            <p className="text-gray-400 text-lg lg:text-[1.3rem] leading-[1.5]">
+            <p className="text-gray-400 text-base md:text-lg lg:text-[1.3rem] leading-[1.5]">
               Branding Communications & Digital<br />
               Media D art is a true amalgamation of<br />
               design
             </p>
           </div>
-          <div className="w-full lg:flex-1 flex justify-start lg:justify-end lg:-mt-8">
-            <img src="/assets/certi.png" alt="Certificate" className="w-[100%] max-w-[550px] object-contain" />
+          <div className="w-full lg:flex-1 flex justify-center lg:justify-end lg:-mt-8">
+            <img src="/assets/certi.png" alt="Certificate" className="w-[90%] md:w-[100%] max-w-[550px] object-contain" />
           </div>
         </div>
 
         {/* Performance Section */}
         <div className="reveal delay-3 mb-12 w-full">
-          <h3 className="text-center text-white text-[14px] tracking-[0.05em] mb-12 font-medium">PERFORMANCE</h3>
-          <div className="flex flex-col md:flex-row justify-between items-center text-center">
-            <div className="flex-1 md:border-r border-[#222] py-2 mb-8 md:mb-0">
-              <p className="text-[#666] text-[10px] lg:text-[11px] mb-3 tracking-widest uppercase leading-tight font-medium">Projects<br />Completed</p>
-              <h4 className="text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">13k+</h4>
+          <h3 className="text-center text-white text-[14px] tracking-[0.05em] mb-8 lg:mb-12 font-medium">PERFORMANCE</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row justify-between items-center text-center gap-y-10 md:gap-y-12 gap-x-4 lg:gap-0 w-full mb-4">
+            <div className="flex-1 lg:border-r border-[#222] py-0 md:py-2">
+              <p className="text-[#666] text-[10px] lg:text-[11px] mb-2 lg:mb-3 tracking-widest uppercase leading-tight font-medium">Projects<br />Completed</p>
+              <h4 className="text-4xl md:text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">13k+</h4>
             </div>
-            <div className="flex-1 md:border-r border-[#222] py-2 mb-8 md:mb-0">
-              <p className="text-[#666] text-[10px] lg:text-[11px] mb-3 tracking-widest uppercase leading-tight font-medium">Clients Served<br />Worldwide</p>
-              <h4 className="text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">14+</h4>
+            <div className="flex-1 lg:border-r border-[#222] py-0 md:py-2">
+              <p className="text-[#666] text-[10px] lg:text-[11px] mb-2 lg:mb-3 tracking-widest uppercase leading-tight font-medium">Clients Served<br />Worldwide</p>
+              <h4 className="text-4xl md:text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">14+</h4>
             </div>
-            <div className="flex-1 md:border-r border-[#222] py-2 mb-8 md:mb-0">
-              <p className="text-[#666] text-[10px] lg:text-[11px] mb-3 tracking-widest uppercase leading-tight font-medium">Ideas Turned<br />Into Reality</p>
-              <h4 className="text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">100+</h4>
+            <div className="flex-1 lg:border-r border-[#222] py-0 md:py-2">
+              <p className="text-[#666] text-[10px] lg:text-[11px] mb-2 lg:mb-3 tracking-widest uppercase leading-tight font-medium">Ideas Turned<br />Into Reality</p>
+              <h4 className="text-4xl md:text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">100+</h4>
             </div>
-            <div className="flex-1 md:border-r border-[#222] py-2 mb-8 md:mb-0">
-              <p className="text-[#666] text-[10px] lg:text-[11px] mb-3 tracking-widest uppercase leading-tight font-medium">Years of Industry<br />Experience</p>
-              <h4 className="text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">20+</h4>
+            <div className="flex-1 lg:border-r border-[#222] py-0 md:py-2">
+              <p className="text-[#666] text-[10px] lg:text-[11px] mb-2 lg:mb-3 tracking-widest uppercase leading-tight font-medium">Years of Industry<br />Experience</p>
+              <h4 className="text-4xl md:text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">20+</h4>
             </div>
-            <div className="flex-1 py-2">
-              <p className="text-[#666] text-[10px] lg:text-[11px] mb-3 tracking-widest uppercase leading-tight font-medium">Businesses<br />Transformed</p>
-              <h4 className="text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">30</h4>
+            <div className="flex-1 py-0 md:py-2 col-span-2 md:col-span-1">
+              <p className="text-[#666] text-[10px] lg:text-[11px] mb-2 lg:mb-3 tracking-widest uppercase leading-tight font-medium">Businesses<br />Transformed</p>
+              <h4 className="text-4xl md:text-5xl lg:text-[4rem] font-light tracking-tighter text-gray-200">30</h4>
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <BrandSection/>
+      <BrandSection />
 
 
 
@@ -225,77 +225,77 @@ export default function Home() {
 
 
 
-      
+
 
       {/* Featured Projects Stacked Layout */}
       <section className="bg-black w-full flex flex-col">
         {/* Project 1: Cheetah Logistics */}
-        <div className="relative w-full h-[500px] lg:h-[700px] overflow-hidden">
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[700px] overflow-hidden">
           {/* Main Background */}
           <div className="absolute inset-0 w-full h-full bg-[#3d4b68]">
             <img src="/assets/cheetah.png" alt="Cheetah Logistics Background" className="w-full h-full object-cover" />
           </div>
 
-          <div className="absolute top-0 left-0 w-full py-12 lg:py-24 px-8 lg:px-16 z-20 flex flex-col justify-start pb-0">
-            <div className="w-full relative flex items-center mb-2">
+          <div className="absolute top-0 left-0 w-full py-8 md:py-12 lg:py-24 px-6 md:px-8 lg:px-16 z-20 flex flex-col justify-start pb-0">
+            <div className="w-full relative flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-0 mb-2">
               <div className="shrink-0 z-20">
-                <h3 className="text-white text-[2.5rem] lg:text-[4.5rem] font-semibold leading-none tracking-tight">Cheetah Logistics</h3>
+                <h3 className="text-white text-[2rem] sm:text-[2.5rem] lg:text-[4.5rem] font-semibold leading-none tracking-tight">Cheetah Logistics</h3>
               </div>
-              <div className="flex-1 h-[1px] bg-white/30 ml-8 lg:ml-12 mr-6 lg:mr-8 z-10 hidden sm:block"></div>
+              <div className="flex-1 h-[1px] bg-white/30 ml-0 sm:ml-8 lg:ml-12 mr-0 sm:mr-6 lg:mr-8 z-10 w-full sm:w-auto mt-2 sm:mt-0 opacity-50 sm:opacity-100"></div>
               <div className="shrink-0 z-20 hidden sm:block">
                 <img src="/assets/dart_white_lg.png" alt="Dart Logo" className="h-[14px] lg:h-[18px] object-contain opacity-90" />
               </div>
             </div>
-            <p className="text-white text-lg lg:text-[1.3rem] tracking-[0.02em] font-normal z-20">Retail Brand Identity</p>
+            <p className="text-white text-base lg:text-[1.3rem] tracking-[0.02em] font-normal z-20">Retail Brand Identity</p>
           </div>
         </div>
 
         {/* Project 2: G Marts */}
-        <div className="relative w-full h-[500px] lg:h-[700px] overflow-hidden bg-[#240A4D]">
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[700px] overflow-hidden bg-[#240A4D]">
           <div className="absolute inset-0 w-full h-full">
             <img src="/assets/gmart.jpg" alt="G Mart Background" className="w-full h-full object-cover" />
           </div>
 
-          <div className="absolute top-0 left-0 w-full py-12 lg:py-24 px-8 lg:px-16 z-20 flex flex-col justify-start pb-0">
-            <div className="w-full relative flex items-center mb-2">
+          <div className="absolute top-0 left-0 w-full py-8 md:py-12 lg:py-24 px-6 md:px-8 lg:px-16 z-20 flex flex-col justify-start pb-0">
+            <div className="w-full relative flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-0 mb-2">
               <div className="shrink-0 z-20">
-                <h3 className="text-white text-[2.5rem] lg:text-[4.5rem] font-semibold leading-none tracking-tight">G Marts</h3>
+                <h3 className="text-white text-[2rem] sm:text-[2.5rem] lg:text-[4.5rem] font-semibold leading-none tracking-tight">G Marts</h3>
               </div>
-              <div className="flex-1 h-[1px] bg-white/30 ml-8 lg:ml-12 mr-6 lg:mr-8 z-10 hidden sm:block"></div>
+              <div className="flex-1 h-[1px] bg-white/30 ml-0 sm:ml-8 lg:ml-12 mr-0 sm:mr-6 lg:mr-8 z-10 w-full sm:w-auto mt-2 sm:mt-0 opacity-50 sm:opacity-100"></div>
               <div className="shrink-0 z-20 hidden sm:block">
                 <img src="/assets/dart_white_lg.png" alt="Dart Logo" className="h-[14px] lg:h-[18px] object-contain opacity-90" />
               </div>
             </div>
-            <p className="text-white text-lg lg:text-[1.3rem] tracking-[0.02em] font-normal z-20">Retail Brand Identity</p>
+            <p className="text-white text-base lg:text-[1.3rem] tracking-[0.02em] font-normal z-20">Retail Brand Identity</p>
           </div>
         </div>
 
         {/* Project 3: Yom International */}
-        <div className="relative w-full h-[500px] lg:h-[700px] overflow-hidden bg-[#0A1727]">
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[700px] overflow-hidden bg-[#0A1727]">
           <div className="absolute inset-0 w-full h-full">
             <img src="/assets/yom_intern.png" alt="Yom International Background" className="w-full h-full object-cover" />
           </div>
 
-          <div className="absolute top-0 left-0 w-full py-12 lg:py-24 px-8 lg:px-16 z-20 flex flex-col justify-start pb-0">
-            <div className="w-full relative flex items-center mb-2">
+          <div className="absolute top-0 left-0 w-full py-8 md:py-12 lg:py-24 px-6 md:px-8 lg:px-16 z-20 flex flex-col justify-start pb-0">
+            <div className="w-full relative flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-0 mb-2">
               <div className="shrink-0 z-20">
-                <h3 className="text-white text-[2.5rem] lg:text-[4.5rem] font-semibold leading-none tracking-tight">Yom International</h3>
+                <h3 className="text-white text-[2rem] sm:text-[2.5rem] lg:text-[4.5rem] font-semibold leading-none tracking-tight">Yom International</h3>
               </div>
-              <div className="flex-1 h-[1px] bg-white/30 ml-8 lg:ml-12 mr-6 lg:mr-8 z-10 hidden sm:block"></div>
+              <div className="flex-1 h-[1px] bg-white/30 ml-0 sm:ml-8 lg:ml-12 mr-0 sm:mr-6 lg:mr-8 z-10 w-full sm:w-auto mt-2 sm:mt-0 opacity-50 sm:opacity-100"></div>
               <div className="shrink-0 z-20 hidden sm:block">
                 <img src="/assets/dart_white_lg.png" alt="Dart Logo" className="h-[14px] lg:h-[18px] object-contain opacity-90" />
               </div>
             </div>
-            <p className="text-white text-lg lg:text-[1.3rem] tracking-[0.02em] font-normal z-20">Premium Brand Identity</p>
+            <p className="text-white text-base lg:text-[1.3rem] tracking-[0.02em] font-normal z-20">Premium Brand Identity</p>
           </div>
         </div>
       </section>
 
       {/* Our Expertise */}
-      <section className="py-14 px-8 lg:px-16 bg-white text-black font-sans w-full">
+      <section className="py-10 md:py-14 px-6 md:px-8 lg:px-16 bg-white text-black font-sans w-full">
         <div className="w-full">
-          <h2 className="reveal delay-1 text-[4rem] md:text-[6.5rem] font-bold tracking-tight mb-4 leading-none text-black">Our Expertise</h2>
-          <p className="reveal delay-2 text-xl md:text-[2rem] text-gray-500 font-medium max-w-4xl leading-[1.25] mb-14 tracking-tight">
+          <h2 className="reveal delay-1 text-[2.5rem] md:text-[4rem] lg:text-[6.5rem] font-bold tracking-tight mb-2 md:mb-4 leading-none text-black">Our Expertise</h2>
+          <p className="reveal delay-2 text-lg sm:text-xl md:text-[2rem] text-gray-500 font-medium max-w-4xl leading-[1.25] mb-10 md:mb-14 tracking-tight">
             Merging strategic architecture with artistic vision to<br className="hidden md:block" />create award-winning brand experiences.
           </p>
 
@@ -358,29 +358,29 @@ export default function Home() {
                 icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" /></svg>)
               }
             ].map((item, idx) => (
-              <div key={idx} className="grid grid-cols-1 md:grid-cols-12 gap-8 py-10 border-t border-gray-200">
+              <div key={idx} className="flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-8 py-8 md:py-10 border-t border-gray-200">
                 {/* Left Col */}
-                <div className="md:col-span-4 flex flex-col items-start pr-8">
-                  <div className="flex items-center mb-6">
-                    <span className="text-[#FF5E00] font-bold text-lg tracking-wider mr-2">[{item.num}]</span>
-                    <h3 className="text-2xl font-bold text-black tracking-tight">{item.title}</h3>
-                    <span className="text-black font-medium ml-2">—</span>
+                <div className="md:col-span-4 flex flex-row md:flex-col items-center md:items-start justify-between md:pr-8">
+                  <div className="flex items-center mb-0 md:mb-6">
+                    <span className="text-[#FF5E00] font-bold text-base md:text-lg tracking-wider mr-2">[{item.num}]</span>
+                    <h3 className="text-xl md:text-2xl font-bold text-black tracking-tight">{item.title}</h3>
+                    <span className="text-black font-medium ml-2 hidden md:inline">—</span>
                   </div>
-                  <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-400">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-400">
                     {item.icon}
                   </div>
                 </div>
 
                 {/* Middle Col */}
-                <div className="md:col-span-6 flex items-start">
-                  <p className="text-[#888] text-[15px] leading-[1.6] max-w-md tracking-wide">
+                <div className="md:col-span-6 flex items-start mt-2 md:mt-0">
+                  <p className="text-[#888] text-[14px] md:text-[15px] leading-[1.6] max-w-md tracking-wide">
                     {item.desc}
                   </p>
                 </div>
 
                 {/* Right Col */}
-                <div className="md:col-span-2 flex flex-col items-end text-right">
-                  <ul className="text-[12px] text-[#444] leading-[1.8] font-medium tracking-wide">
+                <div className="md:col-span-2 flex flex-col items-start md:items-end text-left md:text-right mt-2 md:mt-0">
+                  <ul className="text-[12px] text-[#444] leading-[1.8] font-medium tracking-wide grid grid-cols-2 lg:grid-cols-1 gap-x-4 w-full lg:w-auto">
                     {item.list.map((listItem, i) => (
                       <li key={i}>{listItem}</li>
                     ))}
@@ -390,17 +390,17 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="pt-12 pb-6 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4 font-medium tracking-wide">
-            <span className="text-[#888] text-xl">Ready to create?</span>
+          <div className="pt-8 md:pt-12 pb-6 flex flex-col sm:flex-row items-center justify-center gap-4 font-medium tracking-wide">
+            <span className="text-[#888] text-lg sm:text-xl">Ready to create?</span>
             <span className="w-[1px] h-6 bg-gray-300 hidden sm:block mx-2"></span>
-            <a href="#" className="text-black text-xl border-b-[2px] border-orange-500 pb-0.5 hover:text-orange-600 transition">view our work</a>
-            <a href="#" className="text-black text-xl sm:pl-4 border-b-[2px] border-orange-500 pb-0.5 hover:text-orange-600 transition">start a project</a>
+            <a href="#" className="text-black text-lg sm:text-xl border-b-[2px] border-orange-500 pb-0.5 hover:text-orange-600 transition">view our work</a>
+            <a href="#" className="text-black text-lg sm:text-xl sm:pl-4 border-b-[2px] border-orange-500 pb-0.5 hover:text-orange-600 transition">start a project</a>
           </div>
         </div>
       </section>
 
       {/* FAQ / Popular Queries Section */}
-      <section className="py-14 px-8 lg:px-16 bg-white font-sans w-full">
+      <section className="py-10 md:py-14 px-6 md:px-8 lg:px-16 bg-white font-sans w-full">
         {/* Top Header line */}
         <div className="w-full border-t border-gray-200 mb-10 flex justify-center pt-6">
           <div className="flex items-center tracking-tight text-gray-500">
@@ -412,11 +412,11 @@ export default function Home() {
         </div>
 
         {/* Huge Heading */}
-        <div className="text-center w-full mb-14 max-w-4xl mx-auto">
-          <h2 className="text-[3rem] md:text-[4rem] font-bold text-[#222] leading-[1.1] mb-6 tracking-tight">
+        <div className="text-center w-full mb-10 md:mb-14 max-w-4xl mx-auto">
+          <h2 className="text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold text-[#222] leading-[1.1] mb-4 md:mb-6 tracking-tight">
             Quick and clear answer to<br className="hidden md:block" />your key questions
           </h2>
-          <p className="text-[1.5rem] md:text-[1.8rem] text-gray-500 font-normal leading-[1.3] tracking-tight max-w-2xl mx-auto">
+          <p className="text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] text-gray-500 font-normal leading-[1.3] tracking-tight max-w-2xl mx-auto">
             Get the clarity you need about our design<br className="hidden md:block" />process and service
           </p>
         </div>
@@ -433,8 +433,8 @@ export default function Home() {
               { q: "How do you approach branding?", a: "We start with extensive market research, define clear objectives, establish a unique tone of voice, and then design an immersive visual system..." }
             ].map((faq, idx) => (
               <details key={idx} className="group border-b border-gray-200">
-                <summary className="flex justify-between items-center cursor-pointer list-none py-8 pr-2 [&::-webkit-details-marker]:hidden">
-                  <h4 className="text-[1.4rem] font-medium text-gray-900 tracking-tight">{faq.q}</h4>
+                <summary className="flex justify-between items-center cursor-pointer list-none py-6 md:py-8 pr-2 [&::-webkit-details-marker]:hidden">
+                  <h4 className="text-[1.2rem] md:text-[1.4rem] font-medium text-gray-900 tracking-tight pr-4">{faq.q}</h4>
 
                   {/* The custom Icon Toggle: Two Orange Lines when closed, One Orange line when open */}
                   <div className="w-6 h-5 flex flex-col items-center shrink-0">
@@ -452,18 +452,20 @@ export default function Home() {
           </div>
 
           {/* Right Side: Image and CTA */}
-          <div className="w-full lg:w-1/3 flex flex-col items-start pr-8">
+          <div className="w-full lg:w-1/3 flex flex-row lg:flex-col items-center lg:items-start gap-6 lg:gap-0 lg:pr-8">
             {/* Portrait Image */}
-            <div className="w-[80%] aspect-[4/3] overflow-hidden relative mb-6">
+            <div className="w-1/2 lg:w-[80%] aspect-[4/3] overflow-hidden relative mb-0 lg:mb-6 rounded-lg">
               <img src="/assets/two_people.png" alt="Two people talking" className="w-full h-full object-cover" />
             </div>
 
-            <h3 className="text-[1.6rem] font-bold text-[#222] leading-[1.2] mb-4 tracking-tight pr-4">
-              Still looking for<br />answers or need<br />a good chat?
-            </h3>
-            <p className="text-[0.85rem] text-[#555] leading-[1.6]">
-              Our team will guide you through our<br />design process, project<br />specifications and cost estimate.
-            </p>
+            <div className="w-1/2 lg:w-full">
+              <h3 className="text-[1.4rem] md:text-[1.6rem] font-bold text-[#222] leading-[1.2] mb-2 md:mb-4 tracking-tight pr-0 lg:pr-4">
+                Still looking for<br className="hidden lg:block" />answers or need<br className="hidden lg:block" />a good chat?
+              </h3>
+              <p className="text-[0.8rem] md:text-[0.85rem] text-[#555] leading-[1.6]">
+                Our team will guide you through our<br className="hidden lg:block" />design process, project<br className="hidden lg:block" />specifications and cost estimate.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -483,30 +485,30 @@ export default function Home() {
       </section>
 
       {/* Client Stories / Testimonials */}
-      <section className="py-14 px-8 lg:px-16 bg-white font-sans w-full">
+      <section className="py-10 md:py-14 px-6 md:px-8 lg:px-16 bg-white font-sans w-full overflow-hidden">
         {/* Top small header */}
-        <div className="reveal delay-1 flex items-center gap-3 mb-2">
+        <div className="reveal delay-1 flex items-center gap-2 md:gap-3 mb-2">
           <span className="w-1.5 h-1.5 rounded-full border border-[#FF5E00] block"></span>
-          <span className="text-[1.3rem] text-gray-600 font-medium tracking-tight">Client Stories</span>
-          <span className="mx-3 text-gray-300 font-light">|</span>
-          <span className="text-sm tracking-wider font-normal text-gray-400 lowercase">testimonials</span>
+          <span className="text-[1.1rem] md:text-[1.3rem] text-gray-600 font-medium tracking-tight">Client Stories</span>
+          <span className="mx-2 md:mx-3 text-gray-300 font-light">|</span>
+          <span className="text-xs md:text-sm tracking-wider font-normal text-gray-400 lowercase">testimonials</span>
         </div>
-        <div className="reveal delay-2 w-full h-[1px] bg-gray-200 mb-10"></div>
+        <div className="reveal delay-2 w-full h-[1px] bg-gray-200 mb-8 md:mb-10"></div>
 
         {/* Heading */}
-        <div className="reveal delay-3 mb-6">
-          <h2 className="text-[3rem] md:text-[4.5rem] font-bold text-[#222] tracking-tight leading-[1.05]">
+        <div className="reveal delay-3 mb-4 md:mb-6">
+          <h2 className="text-[2.2rem] md:text-[3rem] lg:text-[4.5rem] font-bold text-[#222] tracking-tight leading-[1.05]">
             Inspiring client experiences
           </h2>
         </div>
-        <p className="reveal delay-4 text-[1.4rem] md:text-[1.8rem] text-gray-400 font-normal tracking-tight mb-10">
+        <p className="reveal delay-4 text-[1.2rem] md:text-[1.4rem] lg:text-[1.8rem] text-gray-400 font-normal tracking-tight mb-8 md:mb-10">
           Join us and become our next success story
         </p>
 
         {/* Testimonial Layout: Static Card + Auto-scroll Marquee */}
-        <div className="flex gap-6 items-stretch">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-center lg:items-stretch overflow-hidden">
           {/* Static Card: Rajesh Patel */}
-          <div className="reveal-card delay-1 shrink-0 w-[280px] md:w-[300px] bg-[#111] rounded-2xl overflow-hidden relative group cursor-pointer">
+          <div className="reveal-card delay-1 shrink-0 w-full max-w-[320px] lg:max-w-none lg:w-[300px] bg-[#111] rounded-2xl overflow-hidden relative group cursor-pointer">
             <div className="w-full aspect-[3/4] bg-gray-300 relative overflow-hidden">
               <img src="/assets/rajwinder.png" alt="Rajesh Patel" className="w-full h-full object-cover" />
               <div className="absolute top-4 right-4 w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
@@ -601,8 +603,8 @@ export default function Home() {
         </div>
       </section>
 
-     
-      <StatsBanner/>
+
+      <StatsBanner />
 
       {/* Footer */}
       <Footer />

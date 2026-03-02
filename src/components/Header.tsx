@@ -39,11 +39,11 @@ export default function Header() {
 
     return (
         <>
-            <nav className="absolute top-0 left-0 right-0 z-[100] flex items-center justify-between px-8 lg:px-16 pt-8 pointer-events-none">
+            <nav className="absolute top-0 left-0 right-0 z-[100] flex items-center justify-between px-6 md:px-8 lg:px-16 pt-6 md:pt-8 pointer-events-none">
                 {/* ── Left: Social Links ── */}
                 {/* We use pointer-events-auto just on the clickable areas so we don't block clicks on the page beneath */}
                 <div
-                    className={`pointer-events-auto flex gap-4 lg:gap-6 font-medium text-sm lg:text-base uppercase tracking-wider transition-colors duration-500 ${isMenuOpen ? "text-orange-600 opacity-0" : "text-orange-600 opacity-100"}`}
+                    className={`pointer-events-auto hidden sm:flex gap-4 lg:gap-6 font-medium text-xs sm:text-sm lg:text-base uppercase tracking-wider transition-colors duration-500 ${isMenuOpen ? "text-orange-600 opacity-0" : "text-orange-600 opacity-100"}`}
                 >
                     {SOCIAL_LINKS.map((social) => (
                         <a
@@ -60,24 +60,24 @@ export default function Header() {
                 </div>
 
                 {/* ── Center Logo ── */}
-                <Link href="/" className={`pointer-events-auto absolute left-1/2 -translate-x-1/2 outline-none transition-opacity duration-500 ${isMenuOpen ? "opacity-0" : "opacity-100"}`}>
+                <Link href="/" className={`pointer-events-auto absolute left-6 sm:left-1/2 sm:-translate-x-1/2 outline-none transition-opacity duration-500 ${isMenuOpen ? "opacity-0" : "opacity-100"}`}>
                     <img
                         src={ASSETS.logoMain}
                         alt="D-art Logo"
-                        className="h-8 lg:h-12 object-contain"
+                        className="h-6 sm:h-8 lg:h-12 object-contain"
                     />
                 </Link>
 
                 {/* ── Right: Hamburger Icon ── */}
                 <div
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="pointer-events-auto flex flex-col gap-2.5 cursor-pointer w-10 justify-center group relative z-[100]"
+                    className="pointer-events-auto flex flex-col gap-2 md:gap-2.5 cursor-pointer w-8 md:w-10 justify-center group relative z-[100] ml-auto sm:ml-0"
                 >
                     <span
-                        className={`w-full h-[3px] origin-center transition-all duration-300 ${isMenuOpen ? "bg-white rotate-45 translate-y-[6.5px]" : "bg-orange-600 group-hover:bg-orange-500"}`}
+                        className={`w-full h-[2.5px] md:h-[3px] origin-center transition-all duration-300 ${isMenuOpen ? "bg-white rotate-45 translate-y-[6px]" : "bg-orange-600 group-hover:bg-orange-500"}`}
                     ></span>
                     <span
-                        className={`w-full h-[3px] origin-center transition-all duration-300 ${isMenuOpen ? "bg-white -rotate-45 -translate-y-[6.5px]" : "bg-orange-600 group-hover:bg-orange-500"}`}
+                        className={`w-full h-[2.5px] md:h-[3px] origin-center transition-all duration-300 ${isMenuOpen ? "bg-white -rotate-45 -translate-y-[6px]" : "bg-orange-600 group-hover:bg-orange-500"}`}
                     ></span>
                 </div>
             </nav>
@@ -98,13 +98,13 @@ export default function Header() {
 
                         {/* Slide-out Sidebar Box */}
                         <motion.div
-                            className="fixed top-0 right-0 bottom-0 z-50 w-[400px] max-w-[100vw] bg-[#FF5E00] shadow-2xl flex flex-col py-32 px-12 overflow-y-auto"
+                            className="fixed top-0 right-0 bottom-0 z-50 w-full sm:w-[400px] max-w-[100vw] bg-[#FF5E00] shadow-2xl flex flex-col pt-24 pb-12 px-8 sm:py-32 sm:px-12 overflow-y-auto"
                             initial={{ x: "100%" }}
                             animate={{ x: 0 }}
                             exit={{ x: "100%" }}
                             transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
                         >
-                            <ul className="flex flex-col gap-8 list-none p-0 m-0 mt-8">
+                            <ul className="flex flex-col gap-6 sm:gap-8 list-none p-0 m-0 mt-4 sm:mt-8">
                                 {navLinks.map((link, i) => (
                                     <div key={link.name} className="overflow-hidden">
                                         <motion.li
@@ -121,7 +121,7 @@ export default function Header() {
                                                 href={link.href}
                                                 onClick={() => setIsMenuOpen(false)}
                                                 className="font-bold text-white uppercase tracking-tight relative group inline-block py-1 outline-none"
-                                                style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1 }}
+                                                style={{ fontSize: "clamp(2rem, 8vw, 3rem)", lineHeight: 1 }}
                                             >
                                                 <span className="relative z-10 transition-colors duration-300 group-hover:text-black">
                                                     {link.name}
