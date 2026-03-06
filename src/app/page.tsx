@@ -527,7 +527,7 @@ export default function Home() {
             <div className="marquee-track">
               {/* First set of cards */}
               {[
-                { quote: "\"The innovative approach and attention to detail by D Art truly exceeded our expectations. Their team understood our vision perfectly.\"", name: "Rajesh Iyer", role: "Client Services Manager", company: "Inventa Digital", italic: true },
+                { quote: "The innovative approach and attention to detail by D Art truly exceeded our expectations. Their team understood our vision perfectly.", name: "Rajesh Iyer", role: "Client Services Manager", company: "Inventa Digital" },
                 { quote: "Working with D art was a total game-changer for us. Their unique design solutions and deep strategy helped elevate our brand significantly.", name: "Vikram Chatterjee", role: "Head of Projects", company: "Bengal Iron & Steel" },
                 { quote: "The team at D Art transformed our brand with incredible innovation. Their responsiveness and commitment to growth exceeded all expectations.", name: "Ananya Sharma", role: "Marketing Manager", company: "Indo-Air Logistics" },
                 { quote: "D Art brought a fresh perspective to our packaging design. The attention to detail and creative thinking set them apart from every other agency we've worked with.", name: "Priya Menon", role: "Brand Director", company: "Spicecraft Foods" },
@@ -536,8 +536,8 @@ export default function Home() {
               ].map((card, i) => (
                 <div key={`a-${i}`} className="shrink-0 w-[280px] md:w-[300px] bg-[#f7f7f7] rounded-2xl p-8 flex flex-col justify-between min-h-[420px]">
                   <div>
-                    {!card.italic && <span className="text-[#ccc] text-5xl font-serif leading-none block mb-4">&ldquo;</span>}
-                    <p className={`text-[#555] text-[15px] leading-[1.65] mb-8 ${card.italic ? 'italic' : ''}`}>
+                    <span className="text-[#ccc] text-5xl font-serif leading-none block mb-4">&ldquo;</span>
+                    <p className="text-[#555] text-[15px] leading-[1.65] mb-8">
                       {card.quote}
                     </p>
                   </div>
@@ -557,7 +557,7 @@ export default function Home() {
 
               {/* Duplicate set for seamless loop */}
               {[
-                { quote: "\"The innovative approach and attention to detail by D Art truly exceeded our expectations. Their team understood our vision perfectly.\"", name: "Rajesh Iyer", role: "Client Services Manager", company: "Inventa Digital", italic: true },
+                { quote: "The innovative approach and attention to detail by D Art truly exceeded our expectations. Their team understood our vision perfectly.", name: "Rajesh Iyer", role: "Client Services Manager", company: "Inventa Digital" },
                 { quote: "Working with D art was a total game-changer for us. Their unique design solutions and deep strategy helped elevate our brand significantly.", name: "Vikram Chatterjee", role: "Head of Projects", company: "Bengal Iron & Steel" },
                 { quote: "The team at D Art transformed our brand with incredible innovation. Their responsiveness and commitment to growth exceeded all expectations.", name: "Ananya Sharma", role: "Marketing Manager", company: "Indo-Air Logistics" },
                 { quote: "D Art brought a fresh perspective to our packaging design. The attention to detail and creative thinking set them apart from every other agency we've worked with.", name: "Priya Menon", role: "Brand Director", company: "Spicecraft Foods" },
@@ -566,8 +566,8 @@ export default function Home() {
               ].map((card, i) => (
                 <div key={`b-${i}`} className="shrink-0 w-[280px] md:w-[300px] bg-[#f7f7f7] rounded-2xl p-8 flex flex-col justify-between min-h-[420px]">
                   <div>
-                    {!card.italic && <span className="text-[#ccc] text-5xl font-serif leading-none block mb-4">&ldquo;</span>}
-                    <p className={`text-[#555] text-[15px] leading-[1.65] mb-8 ${card.italic ? 'italic' : ''}`}>
+                    <span className="text-[#ccc] text-5xl font-serif leading-none block mb-4">&ldquo;</span>
+                    <p className="text-[#555] text-[15px] leading-[1.65] mb-8">
                       {card.quote}
                     </p>
                   </div>

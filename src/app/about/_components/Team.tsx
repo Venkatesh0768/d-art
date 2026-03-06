@@ -120,8 +120,11 @@ const Team = () => (
           </p>
           <div className="w-px h-10 bg-[#333336] opacity-30" />
           <div className="flex gap-8">
-            {["Career page", "Contact us"].map((label) => (
-              <a key={label} href="#" className="relative text-black font-medium group hover:text-[#FF4400] transition-colors duration-300"
+            {[
+              { label: "Career page", href: "#" },
+              { label: "Contact us", href: "/contact" }
+            ].map(({ label, href }) => (
+              <a key={label} href={href} className="relative text-black font-medium group hover:text-[#FF4400] transition-colors duration-300"
                 style={{ fontSize: "clamp(14px, 1.62vw, 28px)", paddingBottom: "2px" }}>
                 {label}
                 <span className="absolute left-0 bottom-[-2px] w-[15px] h-[2px] bg-[#FF4400] transition-all duration-300 group-hover:w-full" />

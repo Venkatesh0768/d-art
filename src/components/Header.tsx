@@ -5,9 +5,7 @@ import { SOCIAL_LINKS, ASSETS } from "../constants/constants";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Menu Configuration
-// ─────────────────────────────────────────────────────────────────────────────
+
 const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },

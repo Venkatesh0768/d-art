@@ -5,6 +5,8 @@
   Partner logos: scrolling marquee from /assets/logos/corporate/
 */
 
+import { SOCIAL_LINKS } from "../../constants/constants";
+
 const corporateLogos = [
   "/assets/logos/corporate/12 2.png",
   "/assets/logos/corporate/12 3.png",
@@ -87,7 +89,7 @@ const StatsBanner = () => (
           Start your project now by booking a one-on-one consultation with our expert.
         </p>
         <div className="flex gap-8 flex-wrap justify-center mt-2">
-          {[{ label: "book a call", href: "/contact" }, { label: "Connect on LinkedIn", href: "https://linkedin.com" }].map(({ label, href }) => (
+          {[{ label: "book a call", href: "/contact" }, { label: "Connect on LinkedIn", href: SOCIAL_LINKS[0].url }].map(({ label, href }) => (
             <a key={label} href={href} className="relative text-white hover:text-[#FF4400] transition-colors duration-300 font-medium group"
               style={{ fontSize: "clamp(11px, 1.62vw, 28px)", lineHeight: "24px", paddingBottom: "2px" }}>
               {label}

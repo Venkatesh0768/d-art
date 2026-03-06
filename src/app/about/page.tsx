@@ -7,8 +7,8 @@ import Team from "./_components/Team";
 import HowWeWork from "./_components/HowWeWork";
 import Recognition from "./_components/Recognition";
 import CTABanner from "./_components/CTABanner";
-import StatsBanner from "./_components/StatsBanner";
 import ProjectPage8 from "./_components/ProjectPage8";
+import StatsBanner from "@/components/common/StatsBanner";
 
 const AboutPage = () => {
   return (

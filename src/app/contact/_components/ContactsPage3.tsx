@@ -26,13 +26,13 @@ const AccordionItem = ({
                 <div className="flex-shrink-0 w-7 h-7 flex items-center justify-center mt-1">
                     {isOpen ? (
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="5" y1="5" x2="23" y2="23" stroke="#ff4400" strokeWidth="2.5" strokeLinecap="round"/>
-                            <line x1="23" y1="5" x2="5" y2="23" stroke="#ff4400" strokeWidth="2.5" strokeLinecap="round"/>
+                            <line x1="5" y1="5" x2="23" y2="23" stroke="#ff4400" strokeWidth="2.5" strokeLinecap="round" />
+                            <line x1="23" y1="5" x2="5" y2="23" stroke="#ff4400" strokeWidth="2.5" strokeLinecap="round" />
                         </svg>
                     ) : (
                         <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="0" y1="5" x2="28" y2="5" stroke="#ff4400" strokeWidth="2.5" strokeLinecap="round"/>
-                            <line x1="0" y1="15" x2="28" y2="15" stroke="#ff4400" strokeWidth="2.5" strokeLinecap="round"/>
+                            <line x1="0" y1="5" x2="28" y2="5" stroke="#ff4400" strokeWidth="2.5" strokeLinecap="round" />
+                            <line x1="0" y1="15" x2="28" y2="15" stroke="#ff4400" strokeWidth="2.5" strokeLinecap="round" />
                         </svg>
                     )}
                 </div>
@@ -64,7 +64,7 @@ const ContactsPage3 = () => {
         },
         {
             question: "What makes your packaging different?",
-            answer: "Our packaging design focuses on the perfect balance between aesthetic appeal and functional practicality. We consider materials, sustainability, unboxing experience, and retail presence to ensure your product stands out on any shelf."
+            answer: "Packaging is not just a container. It's the first conversation between your brand and the customer. We design for the shelf, for the hand, for the memory. That's why our work wins awards."
         },
         {
             question: "How long does a project take?",
@@ -72,14 +72,13 @@ const ContactsPage3 = () => {
         },
         {
             question: "Do you work with startups?",
-            answer: "Yes. Some of our best work has been with founders who had a vision and the courage to back it. Budget matters, but ambition matters more. If you're building something interesting, we want to hear about it."
+            answer: "Yes. Some of our best work has been with founders who had a vision and the courage to back it. Budget matters less than ambition. We’ve built brands from nothing."
         },
         {
-            question: "How do you approach branding?",
-            answer: "We start by listening. We dig into your market, your customers, your competition. Then we build something that cuts through the noise. Strategy first. Design second. Results always."
+            question: "Do you work internationally?",
+            answer: "We do. Our clients span India and beyond. Time zones are just logistics. Good work translates everywhere. Culture and context matter, and we respect both."
         }
     ];
-
     return (
         <div className="w-full bg-white py-24 lg:py-40 px-[5%] md:px-[4%]" data-name="Contacts FAQ Page">
             <div className="w-full flex flex-col items-center">

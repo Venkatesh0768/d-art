@@ -1,9 +1,9 @@
 import Header from '@/components/Header'
 import React from 'react'
-import StatsBanner from '../about/_components/StatsBanner'
 import Footer from '@/components/Footer'
 import ProjectSection1 from './_components/ProjectSection1'
 import ProjectSection2 from './_components/ProjectSection2'
+import StatsBanner from '@/components/common/StatsBanner'
 
 const ProjectPage = () => {
   return (

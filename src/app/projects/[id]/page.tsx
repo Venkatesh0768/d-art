@@ -31,7 +31,7 @@ export default async function ProjectDetailPage({
             <ProjectDetailGallery project={project} />
             <ProjectDetailPrevNext currentId={project.id} />
             <ProjectDetailMore currentId={project.id} />
-             <StatsBanner />
+            <StatsBanner />
             <Footer />
         </div>
     );
